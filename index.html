@@ -10,12 +10,28 @@
 
 <body>
     <div id="paragrafo">
-        <h1 id="">Teste GIT</h1>
+        <h1>Teste GIT</h1>
     </div>
 
+    <input type="text" id="nome">
+    <div id="show-nome"></div>
+
     <script type="text/javascript">
-        const div = document.addEventListener('click', ()=>{
+        const h1 = document.getElementById("paragrafo")
+        const input = document.getElementById("nome")
+        const nome = document.getElementById("show-nome")
+
+        const div = h1.addEventListener('click', ()=>{
             alert("Você acabou de ganhar 2,00")
+        })
+
+        input.addEventListener('keypress', (event)=>{
+            nome.innerHTML = event.target.value
+        })
+
+
+        const showNome = document.addEventListener('keypress', (event)=>{
+
         })
     </script>
 </body>
