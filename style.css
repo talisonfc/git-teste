@@ -1,0 +1,9 @@
+body {
+    z-index: 0;
+    background-color: rgb(243, 221, 221);
+    background-image: url(logo.png);
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
